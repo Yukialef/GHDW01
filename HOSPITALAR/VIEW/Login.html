@@ -3,18 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Sistema de Gestão Hospitalar">
+    <meta name="description" content="Sistema de Gestão Hospitalar">
+    <meta name="keywords" content="Hospitalar, Gestão, Sistema, Pacientes, Médicos, Internações, Consultas, Leitos, Prontuário, Farmácia, Laboratório">
     <title>ENTRE</title>
   </head>
   <body>
-    <img src="../IMAGEM/logo.png">
+    <header>
+      <img src="../IMAGEM/logo.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz" ">
       <h1>LOGIN</h1>
-  <label>Usuário:</label>
-  <input type="email" id="username">
-    <br>
-  <label>Senha:</label>
-  <input type="password" id="password">
-    <br>
-    <a href="Tela_P.html">ENTRAR</a>
+    </header>
+    <main>
+      <p>Bem-vindo ao Sistema de Gestão da clínica Santa Cruz. Por favor, insira suas credenciais para acessar o sistema.</p>
+        <form> <!-- Formulário de login  -->
+          <label for="username">E-mail:</label>
+          <input type="email" id="username" name="username" placeholder="Digite seu e-mail" required><br>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br>
+          <!-- Botão de login que redireciona para Tela_P.html comandos do javascript -->
+          <button type="button" onclick="alert('Bem-vindo ao sistema!'); window.location.href='Tela_P.html'">ENTRAR</button>
+        </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 Hospitalar. Todos os direitos reservados.</p>
+    </footer>
   </body> 
 </html>
