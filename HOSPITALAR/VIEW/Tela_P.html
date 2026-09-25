@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sistema de Gestão da clínica Santa Cruz">
-    <title>DASHBOARD</title>
+    <title>Dashboard</title>
   </head>
   <body>
-    <header>
+    <header class="cabecalho">
       <img src="../IMAGEM/logo.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz">
       <h1>Área Principal</h1>
     </header>
-    <main>
-       <p><a href="../VIEW/paciente/Paciente.html">Pacientes</a></p>
-          <p><a href="../VIEW/médico/Medico.html"> Médicos </a></p>
-             <p><a href="../VIEW/internação/interna.html">Internações</a></p>
-               <p><a href="../VIEW/consultas/consultas.html"> Consultas </a></p>
-                 <p><a href="../VIEW/leitos/leito.html">Leitos</a></p>
-                   <p><a href="../VIEW/protuário/protuario.html"> Prontuário </a></p>
-                      <p><a href="../VIEW/farmácia/farma.html"> Farmácia </a></p>
-                        <p><a href="../VIEW/laboratório/labo.html"> Laboratório </a></p><br>
-                          <p><a href="Login.html"> SAIR </a></p>
+    <div>
+    <aside class="barra-lateral">
+      <nav>
+        <ul>
+          <li><button type="button" onclick="window.location.href='../VIEW/paciente/Paciente.html'">Pacientes</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/médico/Medico.html'">Médicos</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/internação/interna.html'">Internações</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/consultas/consultas.html'">Consultas</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/leitos/leito.html'">Leitos</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/protuário/protuario.html'">Prontuário</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/farmácia/farma.html'">Farmácia</button></li>
+          <li><button type="button" onclick="window.location.href='../VIEW/laboratório/labo.html'">Laboratório</button></li>
+          <li><button onclick="return confirm('Tem certeza que deseja sair?');"><a href="Login.html"> SAIR </a></button></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="dashboard-content">
     </main>
-    <footer>
+    </div>
+    <footer class="rodape">
       <p>&copy; 2026 Hospitalar. Todos os direitos reservados.</p>
     </footer>
   </body>
