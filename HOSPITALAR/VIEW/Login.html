@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema de Gestão Hospitalar">
+    <meta name="description" content="Sistema de Gestão da clínica Santa Cruz">
     <meta name="keywords" content="Hospitalar, Gestão, Sistema, Pacientes, Médicos, Internações, Consultas, Leitos, Prontuário, Farmácia, Laboratório">
-    <title>ENTRE</title>
+    <title>LOGIN</title>
   </head>
   <body>
     <header>
-      <img src="../IMAGEM/logo.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz" ">
+      <img src="../IMAGEM/logo.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz">
       <h1>LOGIN</h1>
     </header>
     <main>
-      <p>Bem-vindo ao Sistema de Gestão da clínica Santa Cruz. Por favor, insira suas credenciais para acessar o sistema.</p>
+      <p>Bem-vindo ao Sistema de Gestão da clínica Santa Cruz</p>
         <form> <!-- Formulário de login  -->
-          <label for="username">E-mail:</label>
-          <input type="email" id="username" name="username" placeholder="Digite seu e-mail" required><br>
-          <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br>
+          <div><!-- Campo de e-mail  -->
+            <label for="username">E-mail:</label>
+            <input type="email" id="username" name="username" placeholder="Digite seu e-mail" required><br>
+          </div>
+          <div><!-- Campo de senha  -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br>
+          </div>
           <!-- Botão de login que redireciona para Tela_P.html comandos do javascript -->
           <button type="button" onclick="alert('Bem-vindo ao sistema!'); window.location.href='Tela_P.html'">ENTRAR</button>
         </form>
     </main>
     <footer>
       <p>&copy; 2026 Hospitalar. Todos os direitos reservados.</p>
+      <!--código feito por Yuki alef com ajuda de...-->
     </footer>
   </body> 
 </html>
