@@ -15,9 +15,68 @@ body {
 .login-body {
     background: linear-gradient(135deg, #2DA157 0%, #14B8A6 58%, #14B8A6 100%);
     min-height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 80px;
+}
+a, button {
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #004267;
+    color: #DFDFDF;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+input {
+    padding: 0.5rem;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid #004267;
+    border-radius: 11px;
+    width: 100%;
+}
+
+.login-fieldset {
+    border: 1px solid #004267;
+    border-radius: 20px;
+    padding: 50px 10px 10px 10px;
+    background-color: #DFDFDF;
+    width: 300px;
+    margin: 0 auto;
+    
+}
+
+body {
+    background-color: #f4f0ea;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #004267;
+    color: #DFDFDF;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
 }

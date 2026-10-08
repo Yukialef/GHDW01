@@ -1,43 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema de Gestão da clínica Santa Cruz">
-    <meta name="keywords" content="Hospitalar, Gestão, Sistema, Pacientes, Médicos, Internações, Consultas, Leitos, Prontuário, Farmácia, Laboratório">
-    <link rel="icon" type="image/png" href="../IMAGEM/logopi.png">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sistema de Gestão da clínica Santa Cruz"
+    />
+    <meta
+      name="keywords"
+      content="Hospitalar, Gestão, Sistema, Pacientes, Médicos, Internações, Consultas, Leitos, Prontuário, Farmácia, Laboratório"
+    />
+    <link rel="icon" type="image/png" href="../IMAGEM/logopi.png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Sistema de Gestão da clínica Santa Cruz</title>
   </head>
   <body class="login-body">
-      <!-- Cabeçalho da página -->     
-       <header>
-        <img src="../IMAGEM/logoi.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz" class="logol">
-        <h1>Bem-vindo ao Sistema de Gestão da clínica Santa Cruz</h1>
-      </header>
-      <!-- Conteúdo principal da página -->
-      <main>
-          <!-- Formulário de login  -->
-          <form action="Tela_P.html" onsubmit="alert('Bem-vindo ao sistema!')"> 
-            <fieldset>
-              <legend>Login</legend>
-            <div><!-- Campo de e-mail  -->
-              <label for="username">E-mail:</label>
-              <input type="email" id="username" name="username" placeholder="Digite seu e-mail" required><br>
-            </div>
-            <div><!-- Campo de senha  -->
-              <label for="password">Senha:</label>
-              <input type="password" id="password" name="password" placeholder="Digite sua senha" required><br>
-            </div>
-            <!-- Botão de login que redireciona para Tela_P.html comandos do javascript -->
-            <button type="submit">ENTRAR</button>
-            </fieldset>
-          </form>
-      </main>
-      <!-- Rodapé da página -->
-      <footer>
-        <p>&copy; 2026 clínica Santa Cruz. Todos os direitos reservados.</p>
-      <!--código feito por Yuki alef com ajuda de Dayvison-->
-      </footer>
-  </body> 
+    <!-- Cabeçalho da página -->
+    <header class="login-header">
+      <img
+        src="../IMAGEM/logoi.png"
+        alt="Logo do Sistema de Gestão da clínica Santa Cruz"
+        class="logol"
+      />
+      <h1 class="bem-vindo">
+        Bem-vindo ao Sistema de Gestão da clínica Santa Cruz
+      </h1>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main class="login-main">
+      <!-- Formulário de login  -->
+      <form
+        class="login-form"
+        action="Tela_P.html"
+        onsubmit="alert('Bem-vindo ao sistema!')"
+      >
+        <fieldset class="login-fieldset">
+          <div class="p-login">
+            <p>login</p>
+          </div>
+          <div class="login-group">
+            <!-- Campo de e-mail  -->
+            <label for="username">E-mail:</label>
+            <input
+              type="email"
+              id="username"
+              name="username"
+              placeholder="Digite seu e-mail"
+              required
+            /><br />
+          </div>
+          <div class="login-group">
+            <!-- Campo de senha  -->
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Digite sua senha"
+              required
+            /><br />
+          </div>
+          <!-- Botão de login que redireciona para Tela_P.html comandos do javascript -->
+          <button class="login-button" type="submit">ENTRAR</button>
+        </fieldset>
+      </form>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+      <p>&copy; 2026 clínica Santa Cruz. Todos os direitos reservados.</p>
+      <!--código feito por Yuki alef -->
+    </footer>
+  </body>
 </html>
