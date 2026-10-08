@@ -37,29 +37,39 @@
       >
         <fieldset class="login-fieldset">
           <div class="p-login">
-            <p>login</p>
+            <p>Login</p>
           </div>
           <div class="login-group">
             <!-- Campo de e-mail  -->
-            <label for="username">E-mail:</label>
+            <label class="login-label" for="username">Usuário:</label>
             <input
-              type="email"
+              type="text"
               id="username"
               name="username"
-              placeholder="Digite seu e-mail"
+              placeholder="Digite seu usuário"
               required
             /><br />
           </div>
           <div class="login-group">
             <!-- Campo de senha  -->
-            <label for="password">Senha:</label>
+            <label class="login-label" for="password">Senha:</label>
             <input
               type="password"
               id="password"
               name="password"
               placeholder="Digite sua senha"
               required
+              class="input-password"
             /><br />
+          </div>
+          <div class="lembrar-esqueci">
+            <div class="checkbox-container">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Lembrar-me</label>
+           </div>
+           <div class="esqueci-senha-container">
+              <a href="#." class="esqueci-senha">Esqueci minha senha</a>
+           </div>
           </div>
           <!-- Botão de login que redireciona para Tela_P.html comandos do javascript -->
           <button class="login-button" type="submit">ENTRAR</button>
