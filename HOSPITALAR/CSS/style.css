@@ -42,31 +42,40 @@ button {
 .bem-vindo {
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: #074265;
+  color: #1e293b;
   margin-bottom: 1rem;
 }
 
 .login-button {
-  background-color: #074265;
+  background-color: rgba(30,41,59, 0.89);
+  backdrop-filter: blur(20px);
   color: #dfdfdf;
+  font-weight: bold;
   border: 1px solid transparent;
-  padding: 0.4rem 1rem;
-  border-radius: 80px;
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
   cursor: pointer;
   margin-top: 1rem;
+  width: 100%;
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.03),
     0 8px 20px rgba(0, 0, 0, 0.06),
     0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
+.button-position {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .login-button:hover {
   border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 12px rgba(7, 66, 101, 0.25);
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.25);
 }
 
 input {
-  color: #074265;
+  color: #1e293b;
   font-size: 0.9rem;
   outline: none;
   padding: 0.5rem;
@@ -85,12 +94,27 @@ input {
 }
 
 input:hover {
-  border-color: #074265;
+  border-color: #1e293b;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 input::placeholder {
   color: #8da2b5;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 8px 20px rgba(0, 0, 0, 0.06),
+    0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+input [type="checkbox"] {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  margin:0;
+  flex-shrink: 0;
 }
 
 .input-password {
@@ -114,7 +138,7 @@ fieldset {
 }
 
 footer {
-  background-color: #074265;
+  background-color: #1e293b;
   color: #dfdfdf;
   padding: 0.5rem;
   text-align: center;
@@ -127,12 +151,12 @@ label {
   font-weight: 550;
   text-align: left;
   font-size: 0.9rem;
-  color: #074265;
+  color: #1e293b;
 }
 
 .p-login {
   font-size: 1.2rem;
-  color: #074265;
+  color: #1e293b;
   margin-bottom: 1rem;
   text-align: center;
   margin: 0 0 1.2rem 0;
@@ -143,8 +167,9 @@ label {
   text-align: right;
   color: #555555;
   margin-top: 0;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .lembrar-esqueci {
@@ -154,13 +179,25 @@ label {
   width: 100%;
 }
 .checkbox-container {
+
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-right: 0;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.checkbox-container label {
+  font-weight: 650;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.78rem;
 }
 
 .esqueci-senha-container {
+  justify-content: flex-end;
+  display: flex;
+  align-self: flex-start;
   margin-left: auto;
-  text-align: right;
+  margin-top: 0.15rem;
 }
