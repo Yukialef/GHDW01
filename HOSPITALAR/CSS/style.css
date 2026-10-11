@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -47,7 +49,7 @@ button {
 }
 
 .login-button {
-  background-color: rgba(30,41,59, 0.89);
+  background-color: rgba(30,41,59, 0.8);
   backdrop-filter: blur(20px);
   color: #dfdfdf;
   font-weight: bold;
@@ -66,7 +68,6 @@ button {
 .button-position {
   display: flex;
   width: 100%;
-  justify-content: center;
 }
 
 .login-button:hover {
@@ -74,10 +75,9 @@ button {
   box-shadow: 0 4px 12px rgba(30, 41, 59, 0.25);
 }
 
-input {
+input:not([type="checkbox"]){
   color: #1e293b;
   font-size: 0.9rem;
-  outline: none;
   padding: 0.5rem;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
@@ -93,29 +93,26 @@ input {
     0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.05rem;
+  accent-color:#14B8A6;
+}
+
+input:focus:not([type="checkbox"]){
+  outline: 1px solid #14B8A6;
+}
+
 input:hover {
-  border-color: #1e293b;
+  border-color: #14B8A6;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 input::placeholder {
   color: #8da2b5;
-  backdrop-filter: blur(8px);
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.08),
-    0 8px 20px rgba(0, 0, 0, 0.06),
-    0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-input [type="checkbox"] {
-  appearance: none;
-  height: 15px;
-  width: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  margin:0;
-  flex-shrink: 0;
-}
 
 .input-password {
   margin-bottom: 0.8rem;
@@ -157,7 +154,6 @@ label {
 .p-login {
   font-size: 1.2rem;
   color: #1e293b;
-  margin-bottom: 1rem;
   text-align: center;
   margin: 0 0 1.2rem 0;
   font-weight: 600;
@@ -190,14 +186,13 @@ label {
   font-weight: 650;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 12px;
   font-size: 0.78rem;
+  color: #555555;
 }
 
 .esqueci-senha-container {
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   margin-left: auto;
-  margin-top: 0.15rem;
 }
