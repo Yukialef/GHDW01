@@ -7,4 +7,4 @@ Sistema desenvolvido para treinar minhas habilidades com as seguintes tecnologia
 - HTML
 
 ## Tela de Login
-![Tela de Login](login_page.png)
+![Tela de Login](https://github.com/Yukialef/GHDW01/blob/8a79fff65b1cb7ee3199eb83b3e4135685493180/login_page.png)
