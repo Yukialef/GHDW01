@@ -7,4 +7,4 @@ Sistema desenvolvido para treinar minhas habilidades com as seguintes tecnologia
 - HTML
 
 ## Tela de Login
-[Tela de Login](login-page.png)
+![Tela de Login](login_page.png)
