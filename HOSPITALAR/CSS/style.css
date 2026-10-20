@@ -36,6 +36,50 @@ main {
   padding: 2rem;
 }
 
+/*começo da estilização das páginas seguintes*/
+.default {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #ee991b;
+}
+
+.barra-lateral {
+  width: 250px;
+  background-color: #1e293b;
+  color: #dfdfdf;
+  padding: 2rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.principal-content {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f4f0ea;
+  justify-content: center;
+}
+
+.headerp{
+  background: linear-gradient(135deg, #2da157 0%, #14b8a6 58%);
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  width: 100%
+}
+
+.headerp img{
+  width: 14rem;
+  padding: 0.5rem;
+}
+/*fim da estilização das páginas*/
 a,
 button {
   text-decoration: none;
