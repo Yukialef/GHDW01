@@ -12,26 +12,37 @@
     <!-- Cabeçalho da página -->
     <header  class="headerp">
       <img src="../IMAGEM/logomod.png.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz 2026" class="logo">
+        <nav class="nav">
+    <ul>
+        <li>
+            <a href="../VIEW/paciente/Paciente.html">Pacientes</a>
+        </li>
+
+        <li>
+            <a href="../VIEW/médico/Medico.html">Médicos</a>
+        </li>
+
+        <li>
+            <a href="../VIEW/consultas/consultas.html">Consultas</a>
+        </li>
+
+        <li>
+            <a href="../VIEW/protuário/protuario.html">Prontuário</a>
+        </li>
+
+        <li>
+            <a class="sair" href="Login.html" onclick="return confirm('Tem certeza que deseja sair?');">SAIR</a>
+        </li>
+    </ul>
+</nav>
     </header>
     <!-- Conteúdo principal da página -->
     <div class="default">
-      <aside class="barra-lateral">
-        <nav>
-          <ul>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/paciente/Paciente.html'">Pacientes</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/médico/Medico.html'">Médicos</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/internação/interna.html'">Internações</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/consultas/consultas.html'">Consultas</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/leitos/leito.html'">Leitos</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/protuário/protuario.html'">Prontuário</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/farmácia/farma.html'">Farmácia</button></li>
-            <li class="button-lateral"><button type="button" onclick="window.location.href='../VIEW/laboratório/labo.html'">Laboratório</button></li>
-            <li class="button-lateral"><button onclick="return confirm('Tem certeza que deseja sair?');"><a href="Login.html"> SAIR </a></button></li>
-          </ul>
-        </nav>
-      </aside>
       <main class="principal-content">
         <h1>Área Principal</h1>
+        <div class="card">
+          <p>test</p>
+        </div>
       </main>
     </div>
     <!-- Rodapé da página -->

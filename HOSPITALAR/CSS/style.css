@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 .logol {
@@ -31,9 +32,16 @@ body {
   text-align: center;
 }
 
-main {
-  flex: 1;
-  padding: 2rem;
+.card {
+  background: rgb(255, 255, 255, 0.7);
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;;
+  width: 100%;
+  flex:1;
 }
 
 /*começo da estilização das páginas seguintes*/
@@ -41,43 +49,67 @@ main {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  background-color: #ee991b;
-}
-
-.barra-lateral {
-  width: 250px;
-  background-color: #1e293b;
-  color: #dfdfdf;
-  padding: 2rem;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .principal-content {
-  display: flex;
+  display:flex;
   flex-direction: column;
+  justify-content: flex-start;
   flex:1;
   min-height: 100vh;
-  padding: 2rem;
-  background-color: #f4f0ea;
-  justify-content: center;
+  padding: 2rem 7rem;
+  margin-top: 100px;
+  background-color: #f3f4f6;
 }
 
-.headerp{
-  background: linear-gradient(135deg, #2da157 0%, #14b8a6 58%);
-  padding:1rem;
+body{
+  background-color: #f3f4f6;
+}
+
+header {
+  background: rgb(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding:1.2rem 2rem;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  border-bottom-left-radius:20px;
-  border-bottom-right-radius:20px;
-  width: 100%
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
 }
 
-.headerp img{
+nav {
+  display: flex;
+  justify-content: center;
+  font-size:1.1rem;
+  font-weight: 550;
+  margin-top: 10px;
+}
+
+.sair{
+  color:#ff073a
+}
+
+nav ul {
+  display: flex;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+nav li a{
+  padding: 8px;
+  display: block;
+}
+
+header img{
   width: 14rem;
-  padding: 0.5rem;
 }
 /*fim da estilização das páginas*/
 a,
@@ -241,4 +273,5 @@ footer {
   text-align: center;
   margin-top: auto;
   width: 100%;
+  bottom:0;
 }
