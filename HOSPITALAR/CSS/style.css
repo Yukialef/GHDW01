@@ -83,6 +83,8 @@ body {
 /*fim*/
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: rgb(255, 255, 255, 0.6);
   padding: 16px;
   box-sizing: border-box;
@@ -92,7 +94,7 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   margin-top: 20px;;
   width: 100%;
-  flex:1;
+  gap:1rem;
 }
 
 /*começo da estilização das páginas seguintes*/
@@ -445,9 +447,10 @@ option {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
-  border: 1px solid #1e293b;
+  border: 1px solid #F5F5F5;
   width: 12rem;
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 .default-a:hover{
@@ -456,4 +459,32 @@ option {
   transition: background-color 0.6s ease;
 }
 
+table {
+  border-radius: 12px;
+  border:1px solid #000;
+  border: none;
+  width: 100%;
+}
+
+.table-style {
+  padding: 1rem;
+}
+
+table th {
+    border-bottom: 1px solid #14B8A6;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    color:#14B8A6;
+    text-align: center;
+}
+
+.principal-content{
+  text-align: left;
+}
+
+table td {
+  border-bottom: 1px solid #14B8A6;
+  padding: 1.2rem;
+  text-align: center;
+}
 /*Prontuário*/

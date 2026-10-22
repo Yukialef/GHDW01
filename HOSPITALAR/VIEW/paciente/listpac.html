@@ -39,56 +39,62 @@
             </nav>
     </header>
     <!-- Conteúdo principal da página -->
-    <main class="principal-content">
-        <h1>Listagem de Pacientes</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>Sexo</th>
-                    <th>Endereço</th>
-                    <th>Telefone</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Yuki Silva</th>
-                    <td>18</td>
-                    <td>Masculino</td>
-                    <td>Rua A, 123</td>
-                    <td>(88) 1234-5678</td>
-                </tr>
-                <tr>
-                    <th>Jaime Xavier</th>
-                    <td>19</td>
-                    <td>Masculino</td>
-                    <td>Rua B, 789</td>
-                    <td>(88) 5555-5555</td>
-                </tr>
-                <tr>
-                    <th>Maria Oliveira</th>
-                    <td>25</td>
-                    <td>Feminino</td>
-                    <td>Rua C, 456</td>
-                    <td>(88) 8888-7777</td>
-                </tr>
-                <tr>
-                    <th>João Guilherme</th>
-                    <td>12</td>
-                    <td>Masculino</td>
-                    <td>Rua D, 1011</td>
-                    <td>(88) 1111-2222</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="5">Total de Pacientes: 04</td>
-                </tr>
-            </tfoot>
-        </table>
-        <button type="button" onclick="window.location.href='paciente.html'">VOLTAR</button>
-    </main>
+    <div class="default">
+        <main class="principal-content">
+            <h1>Listagem de Pacientes</h1>
+            <div class="card">
+                <div class="table-style">
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: left; padding: 1.2rem;">Nome</th>
+                                        <th>Idade</th>
+                                        <th>Sexo</th>
+                                        <th>Endereço</th>
+                                        <th>Telefone</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left;">Yuki Silva</td>
+                                        <td>18</td>
+                                        <td>Masculino</td>
+                                        <td>Rua A, 123</td>
+                                        <td>(88) 1234-5678</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">Jaime Xavier</td>
+                                        <td>19</td>
+                                        <td>Masculino</td>
+                                        <td>Rua B, 789</td>
+                                        <td>(88) 5555-5555</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">Maria Oliveira</td>
+                                        <td>25</td>
+                                        <td>Feminino</td>
+                                        <td>Rua C, 456</td>
+                                        <td>(88) 8888-7777</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">João Guilherme</td>
+                                        <td>12</td>
+                                        <td>Masculino</td>
+                                        <td>Rua D, 1011</td>
+                                        <td>(88) 1111-2222</td>
+                                    </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td style="border-bottom: none; text-align: left; font-weight: 600;" colspan="5">Total de Pacientes: 04</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+            </div>
+        </main>
+    </div>
     <!-- Rodapé da página -->
     <footer class="rodape">
         <p>&copy; 2026 clínica Santa Cruz. Todos os direitos reservados.</p>
