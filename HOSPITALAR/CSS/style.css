@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  
+}
+
+h1{
+  white-space: nowrap;
 }
 
 .logol {
@@ -35,6 +40,7 @@ body {
 .card {
   background: rgb(255, 255, 255, 0.7);
   padding: 16px;
+  box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 14px;
   backdrop-filter: blur(8px);
@@ -57,8 +63,10 @@ body {
   justify-content: flex-start;
   flex:1;
   min-height: 100vh;
-  padding: 2rem 7rem;
-  margin-top: 100px;
+  padding: 1.8rem 5rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f3f4f6;
 }
 
@@ -78,7 +86,7 @@ body{
   border-bottom-left-radius:12px;
   border-bottom-right-radius:12px;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top:0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -101,11 +109,13 @@ nav ul {
   display: flex;
   cursor: pointer;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 nav li a{
   padding: 8px;
   display: block;
+  color: #4a3e85;
 }
 
 header img{
@@ -276,6 +286,43 @@ footer {
   padding: 0.5rem;
   text-align: center;
   margin-top: auto;
+  min-width: max-content;
   width: 100%;
   bottom:0;
+  overflow-wrap: break-word;
 }
+
+
+/*Especial page Details*/
+/*consultas*/
+
+/*médicos*/
+
+/*paciente*/
+.especial{
+  text-align: center;
+  margin-bottom:30px;
+  font-size: 1.6rem ;
+}
+.pac{
+  height:500px;
+}
+.cadastrar{
+  background-color: rgba(30,41,59);
+  backdrop-filter: blur(20px);
+  color: #dfdfdf;
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 0.7rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 1.6rem;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.cadastrar:hover{
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(30, 41, 59, 0.9);
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.25);
+}
+/*Prontuário*/

@@ -33,10 +33,10 @@
         </header>
         <!-- Conteúdo principal da página -->
         <main class="principal-content">
-            <h1>Cadastro de Pacientes</h1>
+            <h1 class="especial">Cadastro de Pacientes</h1>
             <!-- Formulário de cadastro de pacientes -->
             <form>
-                <fieldset>
+                <fieldset class="pac">
                     <legend>Informações Pessoais</legend>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required><br>
@@ -58,8 +58,7 @@
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required><br>
 
-                <button type="submit">Cadastrar</button><br>
-                <p> </p>
+                <button class="cadastrar" type="submit">Cadastrar</button><br>
                 <button type="button" onclick="window.location.href='Paciente.html'">VOLTAR</button>
             </fieldset>
             </form>
