@@ -11,10 +11,29 @@
         <!-- Cabeçalho da página -->
         <header class="headerp">
             <a href="../Tela_P.html" ><img src="../../IMAGEM/logomod.png.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz" class="logo"> </a>
-            <h1>Pacientes</h1>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="../paciente/Paciente.html">Pacientes</a>
+                    </li>
+                    <li>
+                        <a href="../médico/Medico.html">Médicos</a>
+                    </li>
+                    <li>
+                        <a href="../consultas/consultas.html">Consultas</a>
+                    </li>
+                    <li>
+                        <a href="../protuário/protuario.html">Prontuário</a>
+                    </li>
+                    <li>
+                        <a class="sair" href="../Login.html" onclick="return confirm('Tem certeza que deseja sair?');">SAIR</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- Conteúdo principal da página -->
         <main class="principal-content">
+            <h1>Pacientes</h1>
             <button onclick="window.location.href='cad.html'">Cadastrar Paciente</button><br>
             <button onclick="window.location.href='listpac.html'">Listar Pacientes</button><br>
             <button type="button" onclick="window.location.href='../Tela_P.html'">VOLTAR</button>
