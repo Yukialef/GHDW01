@@ -471,8 +471,7 @@ table {
 }
 
 table th {
-    border-bottom: 1px solid #14B8A6;
-    padding-bottom: .5rem;
+    padding: 0.5rem 0;
     font-size: 1.2rem;
     color:#14B8A6;
     text-align: center;
@@ -483,8 +482,24 @@ table th {
 }
 
 table td {
-  border-bottom: 1px solid #14B8A6;
   padding: 1.2rem;
   text-align: center;
 }
+tfoot td{
+  border-top: 1px solid #14B8A6;
+  padding: 1.2rem 1.2rem;
+}
+.icon{
+  width: 1.65rem;
+  border: none;
+  outline: none;
+  background: none;
+}
+.acoes {
+  gap:1rem;
+  background: none;
+
+}
+
+
 /*Prontuário*/
