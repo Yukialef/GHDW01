@@ -1,76 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../../IMAGEM/logopi.png">
-        <link rel="stylesheet" href="../../CSS/style.css">
-        <title>Cadastro de Pacientes</title>
-    </head>
-    <body>
-        <!-- Cabeçalho da página -->
-        <header class="headerp">
-            <a href="../Tela_P.html" > <img src="../../IMAGEM/logomod.png.png" alt="Logo do Sistema de Gestão da clínica Santa Cruz" class="logo"> </a>
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="../paciente/Paciente.html">Pacientes</a>
-                    </li>
-                    <li>
-                        <a href="../médico/Medico.html">Médicos</a>
-                    </li>
-                    <li>
-                        <a href="../consultas/consultas.html">Consultas</a>
-                    </li>
-                    <li>
-                        <a href="../protuário/protuario.html">Prontuário</a>
-                    </li>
-                    <li>
-                        <a class="sair" href="../Login.html" onclick="return confirm('Tem certeza que deseja sair?');">SAIR</a>
-                    </li>
-                </ul>
-            </nav>  
-        </header>
-        <header class="headersec">
-            <nav class="headersec-nav">
-                <ul>
-                    <li><a href="Paciente.html">VOLTAR</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Conteúdo principal da página -->
-        <main class="principal-content">
-            <h1 class="especial">Cadastro de Pacientes</h1>
-            <!-- Formulário de cadastro de pacientes -->
-            <form>
-                <fieldset class="pac">
-                    <legend>Informações Pessoais</legend>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../IMAGEM/logopi.png" />
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <title>Cadastro de Pacientes</title>
+  </head>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header class="headerp">
+      <a href="../Tela_P.html">
+        <img
+          src="../../IMAGEM/logomod.png.png"
+          alt="Logo do Sistema de Gestão da clínica Santa Cruz"
+          class="logo"
+        />
+      </a>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="../paciente/Paciente.html">Pacientes</a>
+          </li>
+          <li>
+            <a href="../médico/Medico.html">Médicos</a>
+          </li>
+          <li>
+            <a href="../consultas/consultas.html">Consultas</a>
+          </li>
+          <li>
+            <a href="../protuário/protuario.html">Prontuário</a>
+          </li>
+          <li>
+            <a
+              class="sair"
+              href="../Login.html"
+              onclick="return confirm('Tem certeza que deseja sair?');"
+              >SAIR</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header class="headersec">
+      <nav class="headersec-nav">
+        <ul>
+          <li><a href="Paciente.html">VOLTAR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main class="principal-content">
+      <h1 class="especial">Cadastro de Pacientes</h1>
+      <!-- Formulário de cadastro de pacientes -->
+      <form>
+        <fieldset class="pac">
+          <legend>Informações Pessoais</legend>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite o nome completo"
+            required
+          /><br />
 
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" placeholder="Digite a idade" required><br>
+          <label for="idade">Idade:</label>
+          <input
+            type="number"
+            id="idade"
+            name="idade"
+            placeholder="Digite a idade"
+            required
+          /><br />
 
-                <label for="sexo">Sexo:</label>
-                <select id="sexo" name="sexo" required>
-                    <option value="">Selecione</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                </select><br>
+          <label for="sexo">Sexo:</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option></select
+          ><br />
 
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required><br>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required><br>
+          <label for="endereco">Endereço:</label>
+          <input
+            type="text"
+            id="endereco"
+            name="endereco"
+            placeholder="Digite o endereço"
+            required
+          /><br />
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="Digite o telefone"
+            required
+          /><br />
 
-                <button class="cadastrar" type="submit">Cadastrar</button><br>
-            </fieldset>
-            </form>
-        </main>
-        <!-- Rodapé da página -->
-        <footer class="rodape">
-            <p>&copy; 2026 clínica Santa Cruz. Todos os direitos reservados.</p>
-        </footer>
-    </body>
+          <button class="cadastrar" type="submit">Cadastrar</button><br />
+        </fieldset>
+      </form>
+    </main>
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+      <p>&copy; 2026 clínica Santa Cruz. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>

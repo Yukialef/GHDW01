@@ -8,7 +8,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-h1{
+h1 {
   white-space: nowrap;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 /*cabeçalho secundário*/
-.headersec{
+.headersec {
   display: flex;
   position: sticky;
   padding: 0.5rem 5rem 0 5rem;
@@ -49,10 +49,10 @@ body {
 .headersec-nav {
   display: flex;
   align-items: center;
-  font-size:0.9rem;
+  font-size: 0.9rem;
   font-weight: 550;
 }
-.headersec-nav ul{
+.headersec-nav ul {
   display: flex;
   cursor: pointer;
   gap: 0.5rem;
@@ -60,7 +60,7 @@ body {
   align-items: center;
 }
 
-.headersec-nav li a{
+.headersec-nav li a {
   padding: 8px;
   display: block;
   color: #4a3e85;
@@ -73,11 +73,10 @@ body {
   border: 1px solid transparent;
 }
 
-.headersec-nav li a:hover{
-  border: 1px solid #14B8A6;
-  color:#14b8a6 ;
+.headersec-nav li a:hover {
+  border: 1px solid #14b8a6;
+  color: #14b8a6;
   transition: background-color 0.6s ease;
-
 }
 
 /*fim*/
@@ -92,9 +91,9 @@ body {
   border-radius: 14px;
   backdrop-filter: blur(8px);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;;
+  margin-top: 20px;
   width: 100%;
-  gap:1rem;
+  gap: 1rem;
 }
 
 /*começo da estilização das páginas seguintes*/
@@ -105,10 +104,10 @@ body {
 }
 
 .principal-content {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex:1;
+  flex: 1;
   min-height: 100vh;
   padding: 1.1rem 5rem 1.8rem 5rem;
   margin-top: auto;
@@ -117,39 +116,38 @@ body {
   background-color: #f3f4f6;
 }
 
-body{
+body {
   background-color: #f3f4f6;
 }
 
 .headerp {
   background: rgb(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
-  padding:1.2rem 2rem;
+  padding: 1.2rem 2rem;
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom-left-radius:12px;
-  border-bottom-right-radius:12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   width: 100%;
   position: sticky;
-  top:0;
+  top: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.4);
-
 }
 
 nav {
   display: flex;
   justify-content: center;
-  font-size:1.1rem;
+  font-size: 1.1rem;
   font-weight: 550;
   margin-top: 10px;
 }
 
-.sair{
-  color:#ff073a
+.sair {
+  color: #ff073a;
 }
 
 nav ul {
@@ -159,22 +157,22 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li a{
+nav li a {
   padding: 8px;
   display: block;
   color: #4a3e85;
 }
 
-nav li a:hover{
-  color:#14B8A6 ;
+nav li a:hover {
+  color: #14b8a6;
   transition: background-color 0.4s ease;
 }
 
-.sair:hover{
+.sair:hover {
   color: #fe355d;
 }
 
-header img{
+header img {
   width: 14rem;
 }
 /*fim da estilização das páginas*/
@@ -183,13 +181,13 @@ button {
   text-decoration: none;
 }
 
-.login-header{
+.login-header {
   margin-top: 1.5rem;
   position: none;
 }
 
 .login-button {
-  background-color: rgba(30,41,59, 0.8);
+  background-color: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(20px);
   color: #dfdfdf;
   font-weight: bold;
@@ -224,7 +222,7 @@ button {
   margin-bottom: 0.5rem;
 }
 
-input:not([type="checkbox"]){
+input:not([type="checkbox"]) {
   color: #1e293b;
   font-size: 0.9rem;
   padding: 0.5rem;
@@ -246,22 +244,21 @@ input[type="checkbox"] {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  accent-color:#14B8A6;
+  accent-color: #14b8a6;
 }
 
-input:focus:not([type="checkbox"]){
-  outline: 1px solid #14B8A6;
+input:focus:not([type="checkbox"]) {
+  outline: 1px solid #14b8a6;
 }
 
-input:hover:not([type="checkbox"]){
-  border-color: #14B8A6;
+input:hover:not([type="checkbox"]) {
+  border-color: #14b8a6;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 input::placeholder {
   color: #8da2b5;
 }
-
 
 .input-password {
   margin-bottom: 0.8rem;
@@ -284,11 +281,11 @@ fieldset {
 }
 
 .login-main {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 2rem;
-  flex:1;
+  flex: 1;
   align-items: center;
 }
 
@@ -325,7 +322,6 @@ label {
   width: 100%;
 }
 .checkbox-container {
-
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -354,11 +350,9 @@ footer {
   margin-top: auto;
   min-width: max-content;
   width: 100%;
-  bottom:0;
+  bottom: 0;
   overflow-wrap: break-word;
 }
-
-
 
 /*Especial page Details*/
 /*consultas*/
@@ -366,17 +360,17 @@ footer {
 /*médicos*/
 
 /*paciente*/
-.especial{
+.especial {
   text-align: center;
-  margin-bottom:30px;
-  font-size: 1.6rem ;
+  margin-bottom: 30px;
+  font-size: 1.6rem;
 }
-.pac{
-  height:495px;
+.pac {
+  height: 495px;
 }
 
-.cadastrar{
-  background-color: rgba(30,41,59);
+.cadastrar {
+  background-color: rgba(30, 41, 59);
   backdrop-filter: blur(20px);
   color: #dfdfdf;
   font-weight: bold;
@@ -389,7 +383,7 @@ footer {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
-legend{
+legend {
   margin-inline: auto;
   color: #fff;
   font-size: 1rem;
@@ -418,12 +412,12 @@ select {
     0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-select:focus{
-  outline: 1px solid #14B8A6;
+select:focus {
+  outline: 1px solid #14b8a6;
 }
 
-select:hover{
-  border-color: #14B8A6;
+select:hover {
+  border-color: #14b8a6;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -431,7 +425,7 @@ option {
   padding: 0.2rem;
 }
 
-.cadastrar:hover{
+.cadastrar:hover {
   border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: rgba(30, 41, 59, 0.9);
   box-shadow: 0 4px 12px rgba(30, 41, 59, 0.25);
@@ -447,21 +441,21 @@ option {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
-  border: 1px solid #F5F5F5;
+  border: 1px solid #f5f5f5;
   width: 12rem;
   font-weight: 500;
   overflow-wrap: anywhere;
 }
 
-.default-a:hover{
-  border: 1px solid #14B8A6;
-  color:#14b8a6 ;
+.default-a:hover {
+  border: 1px solid #14b8a6;
+  color: #14b8a6;
   transition: background-color 0.6s ease;
 }
 
 table {
   border-radius: 12px;
-  border:1px solid #000;
+  border: 1px solid #000;
   border: none;
   width: 100%;
 }
@@ -471,13 +465,13 @@ table {
 }
 
 table th {
-    padding: 0.5rem 0;
-    font-size: 1.2rem;
-    color:#14B8A6;
-    text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #14b8a6;
+  text-align: center;
 }
 
-.principal-content{
+.principal-content {
   text-align: left;
 }
 
@@ -485,21 +479,19 @@ table td {
   padding: 1.2rem;
   text-align: center;
 }
-tfoot td{
-  border-top: 1px solid #14B8A6;
+tfoot td {
+  border-top: 1px solid #14b8a6;
   padding: 1.2rem 1.2rem;
 }
-.icon{
+.icon {
   width: 1.65rem;
   border: none;
   outline: none;
   background: none;
 }
 .acoes {
-  gap:1rem;
+  gap: 1rem;
   background: none;
-
 }
-
 
 /*Prontuário*/
